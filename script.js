@@ -26,6 +26,9 @@ function updateTimer() {
   document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0")
   document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0")
 }
+document.getElementById('acceptOfferBtn').addEventListener('click', function() {
+    alert('Clicked');
+  });
 
 // Start the timer
 setInterval(updateTimer, 1000)
