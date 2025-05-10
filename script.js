@@ -49,3 +49,24 @@ overlay.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   sidebarOverlay.classList.remove("active")
 })
+
+// Add event listeners for the accept offer button
+const acceptButton = document.querySelector(".accept-button")
+acceptButton.addEventListener("click", () => {
+  alert("Accept offer clicked")
+})
+
+// Add event listeners for the connect telegram button
+const telegramButton = document.querySelector(".telegram-button")
+telegramButton.addEventListener("click", () => {
+  alert("Connect Telegram clicked")
+})
+
+// Add event listener for the TON button as well
+const tonButton = document.querySelector(".ton-button")
+tonButton.addEventListener("click", () => {
+  alert("Connect TON clicked")
+})
+
+// Show the sidebar by default for preview
+sidebarOverlay.classList.add("active")
