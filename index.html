@@ -159,13 +159,7 @@
     <!-- Sidebar - positioned on the right -->
     <div class="sidebar-overlay" id="sidebarOverlay">
       <!-- Overlay - clicking this closes the sidebar -->
-      <div class="overlay" id="overlay">
-        <button class="close-button" id="closeButton">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-      </div>
+      <div class="overlay" id="overlay"></div>
 
       <!-- Sidebar content -->
       <div class="sidebar">
@@ -173,6 +167,11 @@
           <div class="sidebar-logo-container">
             <img src="https://files.catbox.moe/n7cdux.png" alt="Fragment" class="sidebar-logo">
           </div>
+          <button class="close-button" id="closeButton">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
         </div>
 
         <div class="sidebar-content">
@@ -181,7 +180,7 @@
           <div class="sidebar-menu">
             <a href="#" class="sidebar-menu-item">
               <div class="sidebar-icon-container">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
                   <path d="M12 8V12M12 16V16.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 </svg>
@@ -191,9 +190,9 @@
 
             <a href="#" class="sidebar-menu-item">
               <div class="sidebar-icon-container">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M14 2V8H20M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M8 10H16M8 14H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 </svg>
               </div>
               <span>Terms</span>
@@ -201,9 +200,9 @@
 
             <a href="#" class="sidebar-menu-item">
               <div class="sidebar-icon-container">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M12 16.5V16.51M12 7.5V12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 16V16.01M12 8V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 </svg>
               </div>
               <span>Privacy Policy</span>
@@ -215,24 +214,17 @@
             <p class="connect-subtitle">to view your bids and assets</p>
 
             <button class="connect-button ton-button">
-              <div class="connect-icon-container">
-                <img src="https://files.catbox.moe/24qe3k.png" alt="TON" class="connect-icon">
-              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" class="connect-icon">
+                <path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="white" stroke-width="0.5"/>
+                <path d="M12 22V12M12 12L3 7M12 12L21 7" stroke="white" stroke-width="0.5"/>
+              </svg>
               Connect TON
             </button>
 
             <button class="connect-button telegram-button">
-              <!-- Telegram icon -->
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="connect-icon"
-              >
-                <circle cx="12" cy="12" r="10" fill="#2AABEE" />
-                <path d="M17 8L12 13L9 11L7 17L17 8Z" fill="white" />
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="connect-icon">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#2AABEE"/>
+                <path d="M17 8L12 13L9 11L7 17L17 8Z" fill="white"/>
               </svg>
               Connect Telegram
             </button>
